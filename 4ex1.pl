@@ -1,16 +1,15 @@
 #!/usr/bin/env perl
+use v5.38;
 
-sub sum_of_fred_and_barney {
-  my $max = shift @_;
-  foreach (@_) {
-    if ($max < $_) { $max = $_}
-  }
-  $max
+sub total(@list) {
+  my $sum;
+  foreach (@list) { $sum += $_ }
+  $sum;
 }
 
-
-$wilma = &sum_of_fred_and_barney(10, 15, 18, 11);
-print "\$wilma is $wilma.\n";
-
-$betty = 3 * &sum_of_fred_and_barney();
-print "\$betty is $betty.\n";
+my @fred       = qw{ 1 3 5 7 9 };
+my $fred_total = total(@fred);
+print "The total of \@fred is $fred_total.\n";
+print "Enter some numbers on separate lines: ";
+my $user_total = total(<STDIN>);
+print "The total of those numbers is $user_total.\n";
