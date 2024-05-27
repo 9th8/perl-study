@@ -2,11 +2,12 @@
 use v5.34;
 use autodie;
 
-open UPPER, "|-", 'tr "[:lower:]" "[:upper:]"';
-open my $fh1, '<', "this";
+open my $talktome, "|-", 'say';
+say $talktome "Привет. Как тебя зовут?";
+close $talktome;
 
-say <$fh1>;
-say "\n\n\n";
-open $fh1, '<', "this";
+say "Введите имя:";
 
-say UPPER <$fh1> or die "$!";
+my $name = <>;
+open $talktome, "|-", 'say';
+say $talktome "$name! Как замечательно!";
