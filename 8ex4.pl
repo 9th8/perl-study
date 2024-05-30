@@ -3,7 +3,7 @@ use v5.34;
 
 while (<>) {
   chomp;
-  if (/\s$/) {
-    say "$_";
+  if (/(?<name>\b\w+a\b)/) {
+    say "\$name was $+{name}";
   }
 }
