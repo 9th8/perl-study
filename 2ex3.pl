@@ -1,4 +1,5 @@
 #!/usr/bin/env perl
+##Copyright (C) 2024 by me.
 
 print "Please set the radius:";
 chomp ($radius = <STDIN>);

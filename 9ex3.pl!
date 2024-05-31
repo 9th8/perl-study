@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+use v5.34;
+
+my $fname = @ARGV[0] or die "No filename priovided.\n";
+open(my $fh, "<", "$fname") or die "Can't open < $fname $!";
+
+open(my $fh_out, ">", "$fname" . ".out") or die "Can't open > $fname" . ".out $!";
+
+while (<$fh>) {
+  s/fred/zhopa/ig;
+  s/wilma/Fred/ig;
+  s/zhopa/Wilma/g;
+  print $fh_out $_
+}

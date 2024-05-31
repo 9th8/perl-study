@@ -1,0 +1,41 @@
+Jean Vander Pyl – Fred Flintstone
+Alan Reed – Wilma Flintstone
+Mel Blanc – Barney Rubble
+Bea Benaderet – Betty Rubble
+Don Messick – Bamm-Bamm Rubble
+John Stephenson – Mr. Slate
+Gerry Johnson – Betty Rubble
+Hal Smith – Announcer
+Doug Young – Cop
+Howard Morris – Bird
+Daws Butler – Barney Rubble
+Henry Corden – Attendant
+Allan Melvin – Cop
+Harvey Korman – The Great Gazoo
+Jerry Mann – Announcer
+Janet Waldo – Mrs. Slaghoople
+Frank Nelson – Clerk
+June Foray – Bank Customer
+Paula Winslowe – 3rd Nurse
+Verna Felton – Pearl Slaghoople
+Rebecca Page – Pebbles Flintstone
+
+Make a program that prints each line of its input that mentions Wilma. (It shouldn’t do anything for other lines of
+input.) Does it match if your input string is Wilma, Wilmaerick, or AlWilma? Make a small text file with a few lines
+mentioning “Wilma flintstone” and his friends, then use that file as input to this program and the ones later in this
+section.
+ALL CAPS
+both Fred and Wilma.
+only Fred and Fred
+
+Fred but not barney?
+Does it match Mrs. Fred Flintstone?
+What about Fred&Wilma
+Fred
+q
+this
+
+Make a pattern that will match three consecutive copies of whatever is cur‐ rently contained in $what. That is, if $what
+is Wilma, your pattern should match WilmaWilmaWilma. If $what is Wilma|barney, your pattern should match WilmaWilmabarney or
+barneyWilmaWilma or barneybarneybarney or many other variations. (Hint: you should set $what at the top of the pattern
+test program with a statement like my $what = 'Wilma|barney';.)
