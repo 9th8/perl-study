@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 ##Copyright (C) 2024 by me.
-use v5.38;
+use v5.30;
 
 sub greet($who) {
   state $last;

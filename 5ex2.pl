@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 ##Copyright (C) 2024 by me.
-use v5.34;
+use v5.30;
 use autodie;
 
 say "Enter a list of strings on separate lines:";

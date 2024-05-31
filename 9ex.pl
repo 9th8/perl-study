@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 ##Copyright (C) 2024 by me.
-use v5.34;
+use v5.30;
 
 foreach my $fname (@ARGV) {
   open(my $fh, "<", "$fname") or die "Can't open < $fname $!";
