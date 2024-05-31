@@ -1,4 +1,5 @@
 #!/usr/bin/env perl
+##Copyright (C) 2024 by me.
 use v5.38;
 
 sub greet($who) {

@@ -1,4 +1,5 @@
 #!/usr/bin/env perl
+##Copyright (C) 2024 by me.
 
 print "A number, please:";
 chomp($num = <STDIN>);
